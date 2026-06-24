@@ -254,3 +254,61 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;line-height:1.08;letter-sp
 .lang-btn:hover{color:var(--ink)}
 .lang-btn.active{color:#fff;background:linear-gradient(180deg,var(--a300),var(--a600));box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 3px 8px rgba(var(--argb),.4)}
 @media (max-width:880px){ .nav-right{gap:.35rem} }
+
+/* ============================================================
+   AMPLIACIÓN: fondo con más gradientes, reflejos y ondulaciones
+   ============================================================ */
+body{
+  background:
+    radial-gradient(58% 48% at 8% 12%, rgba(var(--argb),.16), transparent 60%),
+    radial-gradient(54% 44% at 92% 16%, rgba(var(--argb),.12), transparent 62%),
+    radial-gradient(135% 95% at 50% -25%, #BFD9FF 0%, #DCEBFF 28%, #EEF6FF 58%, #FAFDFF 100%),
+    #EFF6FF;
+  background-attachment:fixed;
+}
+/* auroras de color que derivan suavemente (reflejos/gradientes) */
+body::before{
+  content:"";position:fixed;inset:-25%;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(34% 30% at 22% 28%, rgba(var(--argb),.22), transparent 70%),
+    radial-gradient(30% 28% at 80% 60%, rgba(120,210,205,.18), transparent 72%),
+    radial-gradient(26% 24% at 62% 16%, rgba(255,255,255,.55), transparent 70%);
+  filter:blur(38px);
+  animation:aurora 28s ease-in-out infinite alternate;
+}
+@keyframes aurora{from{transform:translate3d(-2%,-1%,0) scale(1)}to{transform:translate3d(3%,2%,0) scale(1.08)}}
+/* ondulaciones glossy tipo agua en la base (dos olas en sentidos opuestos) */
+body::after{
+  content:"";position:fixed;left:0;right:0;bottom:0;height:24vh;z-index:-2;pointer-events:none;opacity:.7;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 80' preserveAspectRatio='none'%3E%3Cpath d='M0,42 C85,74 255,74 340,42 L340,80 L0,80 Z' fill='rgba(255,255,255,0.5)'/%3E%3C/svg%3E") repeat-x left bottom,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 60' preserveAspectRatio='none'%3E%3Cpath d='M0,32 C70,56 210,56 280,32 L280,60 L0,60 Z' fill='rgba(180,205,255,0.30)'/%3E%3C/svg%3E") repeat-x left bottom;
+  background-size:340px 80px,280px 60px;
+  animation:waves 22s linear infinite;
+}
+@keyframes waves{from{background-position:0 100%,0 100%}to{background-position:-340px 100%,280px 100%}}
+
+/* ---------- redes sociales ---------- */
+.socials{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.socials a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,.82),rgba(255,255,255,.48));border:1px solid var(--glass-bd);color:var(--a700);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 5px 12px rgba(70,105,185,.16);transition:transform .16s var(--ease),box-shadow .2s,color .2s,background .2s}
+.socials a:hover{transform:translateY(-2px);color:#fff;background:linear-gradient(180deg,var(--a300),var(--a600));box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 9px 18px rgba(var(--argb),.42)}
+.socials svg{width:20px;height:20px;fill:currentColor}
+.socials-group{display:flex;flex-direction:column;gap:.55rem}
+.socials-group .sg-k{font-family:var(--font-head);font-weight:700;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- Clover Story & Lore ---------- */
+.img-ph{display:grid;place-items:center;text-align:center;background:linear-gradient(140deg,var(--tint),rgba(255,255,255,.55));color:rgba(30,39,64,.5);font-family:var(--font-head);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;border:1px dashed rgba(var(--argb),.45);border-radius:18px;padding:1rem;min-height:120px}
+.card-top.img-ph{border-radius:23px 23px 0 0;border:0;border-bottom:1px dashed rgba(var(--argb),.4)}
+.char-card .card-top{aspect-ratio:1/1}
+.lore-summary{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.4rem,4vw,2.4rem);align-items:center;padding:clamp(1.6rem,4vw,2.4rem)}
+.lore-summary h3{font-size:1.4rem;margin-bottom:.6rem}
+.lore-summary p{color:var(--muted)}
+.lore-summary .img-ph{height:100%}
+.chapters{display:flex;flex-direction:column;gap:1.1rem}
+.chapter{padding:1.4rem 1.6rem;display:grid;grid-template-columns:auto 1fr;gap:1.2rem;align-items:start}
+.chapter .ch-no{font-family:var(--font-head);font-weight:700;font-size:1.6rem;color:var(--a700);line-height:1;min-width:2ch}
+.chapter h4{font-family:var(--font-head);font-weight:700;font-size:1.12rem;margin-bottom:.3rem;color:var(--ink)}
+.chapter p{color:var(--muted);font-size:.95rem}
+.chapter.locked{opacity:.62}
+.chapter.locked .ch-no{color:var(--muted)}
+@media (max-width:880px){ .lore-summary{grid-template-columns:1fr} }
