@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title.proj">Proyectos — Clover Y5</title>
+<meta name="description" content="Portafolio de Clover Y5: proyectos de ingeniería (Labs) y creativos (Studio).">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-home">
+<div class="bubbles" aria-hidden="true"><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span></div>
+<nav class="nav">
+  <a href="index.html" class="brand" aria-label="Clover Y5 — inicio"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="lg" cx="34%" cy="28%" r="78%"><stop offset="0%" stop-color="#7DF0B4"/><stop offset="55%" stop-color="#38C97E"/><stop offset="100%" stop-color="#1F9E5E"/></radialGradient></defs><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="labs.html" data-i18n="nav.labs">Labs</a></li>
+      <li><a href="studio.html" data-i18n="nav.studio">Studio</a></li>
+      <li><a href="proyectos.html" class="active" data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button class="lang-btn active" data-lang="es" type="button">ES</button><button class="lang-btn" data-lang="en" type="button">EN</button></div>
+    <button class="nav-toggle" data-i18n-aria="nav.openmenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<main class="wrap">
+  <section class="page-hero">
+    <div class="glass" style="padding:clamp(1.8rem,4vw,2.8rem)">
+      <span class="eyebrow" data-i18n="proj.eyebrow">Portafolio</span>
+      <h1 style="margin-top:.5rem;font-size:clamp(2.2rem,6vw,3.8rem)" data-i18n="proj.h1">Proyectos</h1>
+      <p class="lead" style="margin-top:.9rem" data-i18n="proj.lead">Trabajo de las dos disciplinas. Filtra por Labs (ingeniería) o Studio (creativo).</p>
+    </div>
+  </section>
+  <section class="section-tight">
+    <div class="filters" role="group" aria-label="Filtrar proyectos">
+      <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
+      <button class="filter-btn" data-filter="labs">Labs</button>
+      <button class="filter-btn" data-filter="studio">Studio</button>
+    </div>
+    <div class="grid-projects">
+      <article class="glass card" data-brand="labs"><div class="card-top art-labs"><span class="ph" data-i18n="labs.card1.ph">Hardware · Firmware</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="labs.card1.t">Controlador de reflujo</h3><p data-i18n="labs.card1.d">Plancha convertida en hotplate de reflujo con control PID, termopar tipo K (MAX6675), encoder y PWM sobre bus DC aislado.</p><div class="card-meta"><span>ATmega328P</span><span>OLED SH1106</span></div></div></article>
+      <article class="glass card" data-brand="labs"><div class="card-top art-labs"><span class="ph" data-i18n="labs.card2.ph">Electrónica de potencia</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="labs.card2.t">Cargador 14S de litio</h3><p data-i18n="labs.card2.d">Etapa boost controlada por STM32 con lazo CC/CV y anti-windup, alimentada por una fuente flyback aislada.</p><div class="card-meta"><span>STM32</span><span>58.8 V</span></div></div></article>
+      <article class="glass card" data-brand="labs"><div class="card-top art-labs"><span class="ph" data-i18n="labs.card3.ph">Audio · Análisis</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="labs.card3.t">Sistema 2.1 — crossover</h3><p data-i18n="labs.card3.d">Diseño y diagnóstico del crossover de un sistema 2.1: impedancia, frecuencia de corte real y corrección de distorsión.</p><div class="card-meta"><span>Filtros</span><span>Impedancia</span></div></div></article>
+      <article class="glass card" data-brand="studio"><div class="card-top art-studio"><span class="ph" data-i18n="studio.card1.ph">Identidad de marca</span></div><div class="card-body"><span class="tag-brand studio">Studio</span><h3 data-i18n="studio.card1.t">Sistema visual Clover Y5</h3><p data-i18n="studio.card1.d">La identidad de la marca raíz y sus dos sub-marcas, incluyendo este sitio y sus personajes.</p><div class="card-meta"><span>Branding</span><span data-i18n="studio.card1.m">Personajes</span></div></div></article>
+      <article class="glass card" data-brand="studio"><div class="card-top art-studio"><span class="ph" data-i18n="studio.cardfree.ph">Espacio libre</span></div><div class="card-body"><span class="tag-brand studio">Studio</span><h3 data-i18n="studio.cardnext.t">Tu próxima pieza</h3><p data-i18n="proj.card5.d">Reservado para un proyecto audiovisual: portada, título y una línea de descripción.</p><div class="card-meta"><span>Video</span><span>Motion</span></div></div></article>
+      <article class="glass card" data-brand="studio"><div class="card-top art-studio"><span class="ph" data-i18n="studio.cardfree.ph">Espacio libre</span></div><div class="card-body"><span class="tag-brand studio">Studio</span><h3 data-i18n="studio.cardnext.t">Tu próxima pieza</h3><p data-i18n="studio.card3.d">Duplica este bloque para sumar tantos proyectos como necesites.</p><div class="card-meta"><span>Dirección</span><span>Postpro</span></div></div></article>
+    </div>
+  </section>
+  <section class="section-tight"><div class="glass cta-band"><div><h2 data-i18n="proj.cta.h2">¿Tu proyecto podría estar aquí?</h2><p data-i18n="proj.cta.p">Labs o Studio: cuéntame qué necesitas.</p></div><a href="contacto.html" class="btn btn-primary"><span data-i18n="btn.talk">Hablemos</span> <span class="arr">→</span></a></div></section>
+</main>
+<footer class="glass foot"><div class="foot-grid"><a href="index.html" class="brand"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a><ul class="foot-links"><li><a href="index.html" data-i18n="nav.home">Inicio</a></li><li><a href="labs.html" data-i18n="nav.labs">Labs</a></li><li><a href="studio.html" data-i18n="nav.studio">Studio</a></li><li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li></ul></div><div class="foot-bottom"><span data-i18n="foot.copy">© 2026 Clover Y5 · Ciudad de México</span><span>clovery5.com</span></div></footer>
+<script src="script.js"></script>
+</body></html>

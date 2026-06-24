@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title.labs">Clover Y5 Labs — Ingeniería electrónica</title>
+<meta name="description" content="Clover Y5 Labs: sistemas embebidos, electrónica de potencia, diseño de PCB e IA local.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-labs">
+<div class="bubbles" aria-hidden="true"><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span></div>
+<nav class="nav">
+  <a href="index.html" class="brand" aria-label="Clover Y5 — inicio"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="lg" cx="34%" cy="28%" r="78%"><stop offset="0%" stop-color="#7DF0B4"/><stop offset="55%" stop-color="#38C97E"/><stop offset="100%" stop-color="#1F9E5E"/></radialGradient></defs><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="labs.html" class="active" data-i18n="nav.labs">Labs</a></li>
+      <li><a href="studio.html" data-i18n="nav.studio">Studio</a></li>
+      <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button class="lang-btn active" data-lang="es" type="button">ES</button><button class="lang-btn" data-lang="en" type="button">EN</button></div>
+    <button class="nav-toggle" data-i18n-aria="nav.openmenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<main class="wrap">
+  <section class="page-hero">
+    <div class="glass page-hero-grid">
+      <div>
+        <span class="eyebrow" data-i18n="tag.cy5labs">Clover Y5 / Labs</span>
+        <h1 style="margin-top:.6rem" data-i18n="labs.h1">Del registro al producto.</h1>
+        <p class="lead" data-i18n="labs.lead">Ingeniería electrónica embebida y de potencia. Diseño a nivel de datasheet, lazos de control analizados de verdad y protecciones que no dependen del software.</p>
+        <div class="hero-actions"><a href="contacto.html" class="btn btn-primary"><span data-i18n="btn.requestquote">Solicitar cotización</span> <span class="arr">→</span></a><a href="proyectos.html" class="btn btn-ghost" data-i18n="btn.viewprojects">Ver proyectos</a></div>
+      </div>
+      <div class="figure-glow"><img class="char" src="assets/img/characters/clover-labs.png" alt="Personaje de Clover Y5 Labs" loading="eager"></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head"><span class="eyebrow" data-i18n="labs.svc.eyebrow">Qué hago</span><h2 data-i18n="labs.svc.h2">Servicios de ingeniería</h2><p data-i18n="labs.svc.p">Hardware, firmware y control a la medida, bien hecho y documentado.</p></div>
+    <div class="grid-services">
+      <div class="glass svc"><span class="svc-no">01</span><h3 data-i18n="labs.svc1.t">Sistemas embebidos</h3><p data-i18n="labs.svc1.d">Firmware a nivel de registro sobre AVR, STM32 y 8051. Máquinas de estado, interrupciones y periféricos a la medida.</p></div>
+      <div class="glass svc"><span class="svc-no">02</span><h3 data-i18n="labs.svc2.t">Electrónica de potencia</h3><p data-i18n="labs.svc2.d">Convertidores DC-DC (boost, flyback), cargadores de baterías y control CC/CV. El lazo se analiza, no se ajusta a ciegas.</p></div>
+      <div class="glass svc"><span class="svc-no">03</span><h3 data-i18n="labs.svc3.t">Diseño de PCB</h3><p data-i18n="labs.svc3.d">Del esquemático a la placa fabricable: ruteo, integridad de señal y diseño para fabricación casera o profesional.</p></div>
+      <div class="glass svc"><span class="svc-no">04</span><h3 data-i18n="labs.svc4.t">IA local y automatización</h3><p data-i18n="labs.svc4.d">Agentes y flujos con modelos locales (Ollama / Qwen) para automatizar tareas sin depender de la nube.</p></div>
+    </div>
+  </section>
+  <section class="section-tight">
+    <div class="section-head"><span class="eyebrow" data-i18n="labs.cap.eyebrow">Stack</span><h2 data-i18n="labs.cap.h2">Capacidades</h2></div>
+    <div class="glass" style="padding:.4rem 1.6rem 1.6rem">
+      <dl class="spec-list">
+        <div class="spec"><dt data-i18n="labs.spec1.k">Microcontroladores</dt><dd>ATmega328P · STM32F0/F1 · N76E003</dd></div>
+        <div class="spec"><dt data-i18n="labs.spec2.k">Potencia</dt><dd>Boost · Flyback · CC/CV · IR2110</dd></div>
+        <div class="spec"><dt data-i18n="labs.spec3.k">Sensado</dt><dd>MAX6675 · INA181 · INA240</dd></div>
+        <div class="spec"><dt data-i18n="labs.spec4.k">Herramientas</dt><dd>STM32CubeMX · Arduino · ETAP</dd></div>
+        <div class="spec"><dt data-i18n="labs.spec5.k">Seguridad</dt><dd data-i18n="labs.spec5.v">Watchdog · BKIN · aislamiento óptico</dd></div>
+        <div class="spec"><dt data-i18n="labs.spec6.k">Fabricación</dt><dd data-i18n="labs.spec6.v">PCB 2 capas · SMD / TQFP</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head"><span class="eyebrow" data-i18n="labs.work.eyebrow">Trabajo</span><h2 data-i18n="labs.work.h2">Proyectos de Labs</h2></div>
+    <div class="grid-projects">
+      <article class="glass card"><div class="card-top art-labs"><span class="ph" data-i18n="labs.card1.ph">Hardware · Firmware</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="labs.card1.t">Controlador de reflujo</h3><p data-i18n="labs.card1.d">Plancha convertida en hotplate de reflujo con control PID, termopar tipo K (MAX6675), encoder y PWM sobre bus DC aislado.</p><div class="card-meta"><span>ATmega328P</span><span>OLED SH1106</span></div></div></article>
+      <article class="glass card"><div class="card-top art-labs"><span class="ph" data-i18n="labs.card2.ph">Electrónica de potencia</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="labs.card2.t">Cargador 14S de litio</h3><p data-i18n="labs.card2.d">Etapa boost controlada por STM32 con lazo CC/CV y anti-windup, alimentada por una fuente flyback aislada.</p><div class="card-meta"><span>STM32</span><span>58.8 V</span></div></div></article>
+      <article class="glass card"><div class="card-top art-labs"><span class="ph" data-i18n="labs.card3.ph">Audio · Análisis</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="labs.card3.t">Sistema 2.1 — crossover</h3><p data-i18n="labs.card3.d">Diseño y diagnóstico del crossover de un sistema 2.1: impedancia, frecuencia de corte real y corrección de distorsión.</p><div class="card-meta"><span>Filtros</span><span>Impedancia</span></div></div></article>
+    </div>
+  </section>
+  <section class="section-tight"><div class="glass cta-band"><div><h2 data-i18n="labs.cta.h2">¿Necesitas una placa o un firmware a medida?</h2><p data-i18n="labs.cta.p">Cotizaciones en MXN. Cuéntame los requisitos.</p></div><a href="contacto.html" class="btn btn-primary"><span data-i18n="btn.requestquote">Solicitar cotización</span> <span class="arr">→</span></a></div></section>
+</main>
+<footer class="glass foot"><div class="foot-grid"><a href="index.html" class="brand"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a><ul class="foot-links"><li><a href="index.html" data-i18n="nav.home">Inicio</a></li><li><a href="studio.html" data-i18n="nav.studio">Studio</a></li><li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li><li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li></ul></div><div class="foot-bottom"><span data-i18n="foot.copy.labs">© 2026 Clover Y5 Labs · Ciudad de México</span><span>clovery5.com</span></div></footer>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title.contact">Contacto — Clover Y5</title>
+<meta name="description" content="Contacta a Clover Y5 para proyectos de ingeniería (Labs) o creativos (Studio).">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-home">
+<div class="bubbles" aria-hidden="true"><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span></div>
+<nav class="nav">
+  <a href="index.html" class="brand" aria-label="Clover Y5 — inicio"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="lg" cx="34%" cy="28%" r="78%"><stop offset="0%" stop-color="#7DF0B4"/><stop offset="55%" stop-color="#38C97E"/><stop offset="100%" stop-color="#1F9E5E"/></radialGradient></defs><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="labs.html" data-i18n="nav.labs">Labs</a></li>
+      <li><a href="studio.html" data-i18n="nav.studio">Studio</a></li>
+      <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="contacto.html" class="active" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button class="lang-btn active" data-lang="es" type="button">ES</button><button class="lang-btn" data-lang="en" type="button">EN</button></div>
+    <button class="nav-toggle" data-i18n-aria="nav.openmenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<main class="wrap">
+  <section class="page-hero">
+    <div class="glass" style="padding:clamp(1.8rem,4vw,2.8rem)">
+      <span class="eyebrow" data-i18n="contact.eyebrow">Contacto</span>
+      <h1 style="margin-top:.5rem;font-size:clamp(2.2rem,6vw,3.6rem)" data-i18n="contact.h1">Hablemos de tu proyecto.</h1>
+      <p class="lead" style="margin-top:.9rem" data-i18n="contact.lead">Ingeniería o creativo, escríbeme con lo que tengas en mente y lo aterrizamos juntos.</p>
+    </div>
+  </section>
+  <section class="section-tight">
+    <div class="contact-grid">
+      <div class="glass" style="padding:clamp(1.6rem,4vw,2.2rem)">
+        <h2 style="font-size:clamp(1.5rem,3.5vw,2rem);margin-bottom:1.3rem" data-i18n="contact.form.h2">Cuéntame</h2>
+        <!-- GitHub Pages no envía formularios solo: pega tu endpoint de Formspree (gratis) en action="". -->
+        <form action="https://formspree.io/f/TU_ID" method="POST">
+          <div class="form-field"><label for="nombre" data-i18n="contact.form.name">Nombre</label><input id="nombre" name="nombre" type="text" required autocomplete="name"></div>
+          <div class="form-field"><label for="correo" data-i18n="contact.form.email">Correo</label><input id="correo" name="email" type="email" required autocomplete="email"></div>
+          <div class="form-field"><label for="area" data-i18n="contact.form.area">¿Para qué área?</label><select id="area" name="area"><option value="Labs" data-i18n="contact.opt.labs">Labs — ingeniería electrónica</option><option value="Studio" data-i18n="contact.opt.studio">Studio — creativo / audiovisual</option><option value="Ambos" data-i18n="contact.opt.both">No estoy seguro / ambos</option></select></div>
+          <div class="form-field"><label for="mensaje" data-i18n="contact.form.msg">Mensaje</label><textarea id="mensaje" name="mensaje" required data-i18n-ph="contact.form.msg.ph" placeholder="Describe tu proyecto, alcance y plazos…"></textarea></div>
+          <button type="submit" class="btn btn-primary"><span data-i18n="btn.send">Enviar mensaje</span> <span class="arr">→</span></button>
+        </form>
+      </div>
+      <div>
+        <div class="glass contact-card"><h3 data-i18n="contact.email.h3">Correo directo</h3>
+          <div class="contact-line"><span class="k" data-i18n="contact.email.general">General</span><a class="mono" href="mailto:hola@clovery5.com">hola@clovery5.com</a></div>
+          <div class="contact-line"><span class="k">Labs</span><a class="mono" href="mailto:labs@clovery5.com">labs@clovery5.com</a></div>
+          <div class="contact-line"><span class="k">Studio</span><a class="mono" href="mailto:studio@clovery5.com">studio@clovery5.com</a></div>
+        </div>
+        <div class="glass contact-card" style="margin-top:1.1rem"><h3 data-i18n="contact.quote.h3">Cotizaciones</h3>
+          <div class="contact-line"><span class="k" data-i18n="contact.quote.currency">Moneda</span><span style="color:var(--ink)" data-i18n="contact.quote.currencyv">MXN · IVA 16%</span></div>
+          <div class="contact-line"><span class="k" data-i18n="contact.quote.base">Base</span><span style="color:var(--ink)" data-i18n="contact.quote.basev">Ciudad de México</span></div>
+          <div class="contact-line"><span class="k" data-i18n="contact.quote.resp">Respuesta</span><span style="color:var(--ink)" data-i18n="contact.quote.respv">24–48 h hábiles</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="glass foot"><div class="foot-grid"><a href="index.html" class="brand"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a><ul class="foot-links"><li><a href="index.html" data-i18n="nav.home">Inicio</a></li><li><a href="labs.html" data-i18n="nav.labs">Labs</a></li><li><a href="studio.html" data-i18n="nav.studio">Studio</a></li><li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li></ul></div><div class="foot-bottom"><span data-i18n="foot.copy">© 2026 Clover Y5 · Ciudad de México</span><span>clovery5.com</span></div></footer>
+<script src="script.js"></script>
+</body></html>

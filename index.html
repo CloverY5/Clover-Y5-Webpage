@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title.home">Clover Y5 — Ingeniería × Creativo</title>
+<meta name="description" content="Clover Y5 reúne ingeniería electrónica (Labs) y trabajo creativo audiovisual (Studio) bajo una misma raíz.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-home">
+<div class="bubbles" aria-hidden="true"><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span></div>
+<nav class="nav">
+  <a href="index.html" class="brand" aria-label="Clover Y5 — inicio"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="lg" cx="34%" cy="28%" r="78%"><stop offset="0%" stop-color="#7DF0B4"/><stop offset="55%" stop-color="#38C97E"/><stop offset="100%" stop-color="#1F9E5E"/></radialGradient></defs><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="labs.html" data-i18n="nav.labs">Labs</a></li>
+      <li><a href="studio.html" data-i18n="nav.studio">Studio</a></li>
+      <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button class="lang-btn active" data-lang="es" type="button">ES</button><button class="lang-btn" data-lang="en" type="button">EN</button></div>
+    <button class="nav-toggle" data-i18n-aria="nav.openmenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<main class="wrap">
+  <section class="hero">
+    <div class="glass hero-stage">
+      <div>
+        <span class="eyebrow" data-i18n="home.eyebrow">Ingeniería × Creativo</span>
+        <h1 style="margin-top:.7rem" data-i18n="home.h1">Una raíz,<br>dos mundos.</h1>
+        <p class="lead" data-i18n="home.lead">Clover Y5 reúne la precisión de la ingeniería y la voz de lo creativo. <strong style="color:var(--ink)">Labs</strong> construye el hardware; <strong style="color:var(--ink)">Studio</strong> le da forma y narrativa.</p>
+        <div class="hero-actions">
+          <a href="proyectos.html" class="btn btn-primary"><span data-i18n="btn.viewprojects">Ver proyectos</span> <span class="arr">→</span></a>
+          <a href="contacto.html" class="btn btn-ghost" data-i18n="btn.talk">Hablemos</a>
+        </div>
+      </div>
+      <div class="hero-figure figure-glow"><img class="char" src="assets/img/characters/clover-core.png" alt="Personaje de Clover Y5" loading="eager"></div>
+    </div>
+  </section>
+  <section class="section-tight">
+    <div class="worlds">
+      <article class="glass world theme-labs">
+        <span class="eyebrow" data-i18n="tag.cy5labs">Clover Y5 / Labs</span>
+        <h3>Labs</h3>
+        <p data-i18n="home.world.labs.desc">Ingeniería electrónica embebida, electrónica de potencia y PCB. Del registro al producto.</p>
+        <a href="labs.html" class="btn btn-primary"><span data-i18n="btn.enterlabs">Entrar a Labs</span> <span class="arr">→</span></a>
+        <img class="char" src="assets/img/characters/clover-labs.png" alt="Personaje de Clover Y5 Labs" loading="lazy">
+      </article>
+      <article class="glass world theme-studio">
+        <span class="eyebrow" data-i18n="tag.cy5studio">Clover Y5 / Studio</span>
+        <h3>Studio</h3>
+        <p data-i18n="home.world.studio.desc">Producción audiovisual, identidad y dirección creativa. Donde la señal se vuelve expresión.</p>
+        <a href="studio.html" class="btn btn-primary"><span data-i18n="btn.enterstudio">Entrar a Studio</span> <span class="arr">→</span></a>
+        <img class="char" src="assets/img/characters/clover-studio.png" alt="Personaje de Clover Y5 Studio" loading="lazy">
+      </article>
+    </div>
+  </section>
+  <section class="section">
+    <div class="duo">
+      <div>
+        <span class="eyebrow" data-i18n="home.root.eyebrow">La raíz</span>
+        <h2 style="font-size:clamp(1.7rem,4vw,2.6rem);margin-top:.5rem" data-i18n="home.root.h2">Una marca, dos formas de construir.</h2>
+        <p class="lead" style="margin-top:1rem" data-i18n="home.root.lead">El mismo rigor en dos lenguajes. Labs diseña el hardware y el firmware; Studio le da forma y narrativa.</p>
+        <div class="hero-actions" style="margin-top:1.6rem"><a href="proyectos.html" class="btn btn-primary"><span data-i18n="btn.viewprojects">Ver proyectos</span> <span class="arr">→</span></a></div>
+      </div>
+      <div class="glass mini-list">
+        <p class="ml-k labs">// Labs</p>
+        <p data-i18n="home.mini.labs">Sistemas embebidos · Electrónica de potencia · Diseño de PCB · IA local</p>
+        <div class="mini-div"></div>
+        <p class="ml-k studio">// Studio</p>
+        <p data-i18n="home.mini.studio">Producción audiovisual · Identidad de marca · Motion · Dirección creativa</p>
+      </div>
+    </div>
+  </section>
+  <section class="section-tight">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="home.sel.eyebrow">Selección</span>
+      <h2 data-i18n="home.sel.h2">Proyectos destacados</h2>
+      <p data-i18n="home.sel.p">Una muestra entre Labs y Studio.</p>
+    </div>
+    <div class="grid-projects">
+      <article class="glass card"><div class="card-top art-labs"><span class="ph" data-i18n="home.card1.ph">Hardware · Firmware</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="home.card1.title">Controlador de reflujo</h3><p data-i18n="home.card1.desc">Plancha convertida en hotplate de reflujo con control PID, termopar tipo K y PWM sobre bus DC.</p><div class="card-meta"><span>ATmega328P</span><span>MAX6675</span></div></div></article>
+      <article class="glass card"><div class="card-top art-labs"><span class="ph" data-i18n="home.card2.ph">Electrónica de potencia</span></div><div class="card-body"><span class="tag-brand labs">Labs</span><h3 data-i18n="home.card2.title">Cargador 14S de litio</h3><p data-i18n="home.card2.desc">Etapa boost controlada por STM32 con lazo CC/CV para un pack de 14 celdas.</p><div class="card-meta"><span>STM32</span><span>58.8 V</span></div></div></article>
+      <article class="glass card"><div class="card-top art-studio"><span class="ph" data-i18n="home.card3.ph">Identidad de marca</span></div><div class="card-body"><span class="tag-brand studio">Studio</span><h3 data-i18n="home.card3.title">Sistema visual Clover Y5</h3><p data-i18n="home.card3.desc">Identidad de la marca raíz y sus dos sub-marcas, incluyendo este sitio.</p><div class="card-meta"><span>Branding</span><span>Web</span></div></div></article>
+    </div>
+    <div style="margin-top:2rem"><a href="proyectos.html" class="btn btn-ghost"><span data-i18n="btn.allprojects">Todos los proyectos</span> <span class="arr">→</span></a></div>
+  </section>
+  <section class="section-tight">
+    <div class="glass cta-band">
+      <div><h2 data-i18n="home.cta.h2">¿Tienes algo en mente?</h2><p data-i18n="home.cta.p">Desde una placa a medida hasta una pieza audiovisual.</p></div>
+      <a href="contacto.html" class="btn btn-primary"><span data-i18n="btn.startproject">Iniciar un proyecto</span> <span class="arr">→</span></a>
+    </div>
+  </section>
+</main>
+<footer class="glass foot">
+  <div class="foot-grid">
+    <a href="index.html" class="brand"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><g fill="url(#lg)"><circle cx="12" cy="7.2" r="5.1"/><circle cx="16.8" cy="12" r="5.1"/><circle cx="12" cy="16.8" r="5.1"/><circle cx="7.2" cy="12" r="5.1"/></g><circle cx="12" cy="12" r="2" fill="#fff" opacity=".92"/></svg><span class="brand-name">Clover <span class="y5">Y5</span></span></a>
+    <ul class="foot-links"><li><a href="labs.html" data-i18n="nav.labs">Labs</a></li><li><a href="studio.html" data-i18n="nav.studio">Studio</a></li><li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li><li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li></ul>
+  </div>
+  <div class="foot-bottom"><span data-i18n="foot.copy">© 2026 Clover Y5 · Ciudad de México</span><span>clovery5.com</span></div>
+</footer>
+<script src="script.js"></script>
+</body></html>
